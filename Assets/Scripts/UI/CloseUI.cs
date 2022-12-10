@@ -5,7 +5,7 @@ using UnityEngine;
 public class CloseUI : MonoBehaviour
 {
     [SerializeField] private Canvas workbenchMenu;
-    public void Test()
+    public void CloseButton()
     {
         workbenchMenu.gameObject.SetActive(false);
     }

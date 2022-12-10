@@ -4,16 +4,17 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class ItemMovement : MonoBehaviour
-{
-    [SerializeField] private float speed;
-    [SerializeField] private Transform[] points;
-
+{ 
+    [HideInInspector] public Transform[] points;
+    
     private Transform _currentPoint;
+    private float _speed;
     private int _index;
     private bool _stopped;
 
     private void Start()
     {
+        _speed = 3;
         _index = 0;
         _currentPoint = points[_index];
         _stopped = false;
@@ -24,13 +25,13 @@ public class ItemMovement : MonoBehaviour
         var position1 = transform.position;
         var position2 = _currentPoint.position;
 
-        position1 = Vector3.MoveTowards(position1, position2, speed * Time.deltaTime);
+        position1 = Vector3.MoveTowards(position1, position2, _speed * Time.deltaTime);
         transform.position = position1;
         
         if(position1 != position2) return;
         if (_currentPoint.tag == "Stop")
         {
-            speed = 0;
+            _speed = 0;
             _stopped = true;
         }
         _index += 1;
@@ -47,6 +48,6 @@ public class ItemMovement : MonoBehaviour
 
     private void OnMouseDown()
     {
-        if (_stopped) speed = 3;
+        if (_stopped) _speed = 3;
     }
 }
