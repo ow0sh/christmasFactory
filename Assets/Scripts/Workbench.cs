@@ -1,18 +1,17 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
 public class Workbench : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
+    [SerializeField] private Canvas workbenchMenu;
+    [SerializeField] private Transform startPoint;
 
-    // Update is called once per frame
-    void Update()
+    public static bool itemStatus, canvasStatus;
+    private void OnMouseDown()
     {
-        
+        workbenchMenu.gameObject.SetActive(true);
     }
+    
 }
