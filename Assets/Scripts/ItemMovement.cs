@@ -19,7 +19,7 @@ public class ItemMovement : MonoBehaviour
 
     private void Start()
     {
-        _speed = 5;
+        _speed = 3;
         _index = 0;
         _currentPoint = points[_index];
         stopped = false;
