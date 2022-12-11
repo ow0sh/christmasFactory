@@ -4,9 +4,9 @@ using UnityEngine;
 
 public class CloseUI : MonoBehaviour
 {
-    [SerializeField] private Canvas workbenchMenu;
-    public void CloseButton()
+    public static void CloseButton()
     {
+        var workbenchMenu = GameObject.Find("WorkbenchMenu");
         workbenchMenu.gameObject.SetActive(false);
     }
 }

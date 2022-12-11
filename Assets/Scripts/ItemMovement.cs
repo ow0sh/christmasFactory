@@ -6,18 +6,18 @@ using UnityEngine;
 public class ItemMovement : MonoBehaviour
 { 
     [HideInInspector] public Transform[] points;
-    
+    [HideInInspector] public bool stopped;
+
     private Transform _currentPoint;
     private float _speed;
     private int _index;
-    private bool _stopped;
 
     private void Start()
     {
         _speed = 3;
         _index = 0;
         _currentPoint = points[_index];
-        _stopped = false;
+        stopped = false;
     }
 
     private void Update()
@@ -32,7 +32,7 @@ public class ItemMovement : MonoBehaviour
         if (_currentPoint.tag == "Stop")
         {
             _speed = 0;
-            _stopped = true;
+            stopped = true;
         }
         _index += 1;
 
@@ -48,6 +48,6 @@ public class ItemMovement : MonoBehaviour
 
     private void OnMouseDown()
     {
-        if (_stopped) _speed = 3;
+        if (stopped) _speed = 3;
     }
 }

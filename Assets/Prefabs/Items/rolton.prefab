@@ -95,7 +95,7 @@ GameObject:
   - component: {fileID: -9205445900129339562}
   m_Layer: 0
   m_Name: rolton
-  m_TagString: Untagged
+  m_TagString: CurrentItem
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -128,4 +128,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f61deb3827fb1ccd28415b0bf0102722, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  points: []
+  points:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  stopped: 0

@@ -1,0 +1,4 @@
+repository "ChristmasFactory@dteststst@cloud"
+  path "/"
+    br "/main"
+    co "/main"

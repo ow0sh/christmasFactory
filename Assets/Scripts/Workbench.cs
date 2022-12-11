@@ -8,6 +8,7 @@ public class Workbench : MonoBehaviour
     [SerializeField] private Canvas workbenchMenu;
     private void OnMouseDown()
     {
+        if (GameObject.FindWithTag("CurrentItem")) return;
         workbenchMenu.gameObject.SetActive(true);
     }
     

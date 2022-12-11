@@ -13,5 +13,6 @@ public class Create : MonoBehaviour
         var obj = toy.GetComponent<ItemMovement>();
         obj.points = points;
         Instantiate(toy, points[0].position, Quaternion.identity);
+        CloseUI.CloseButton();
     }
 }
