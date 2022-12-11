@@ -6,6 +6,9 @@ TagManager:
   tags:
   - Stop
   - CurrentItem
+  - Moneys
+  - BoxOpen
+  - Box
   layers:
   - Default
   - TransparentFX

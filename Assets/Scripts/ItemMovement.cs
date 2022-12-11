@@ -8,13 +8,18 @@ public class ItemMovement : MonoBehaviour
     [HideInInspector] public Transform[] points;
     [HideInInspector] public bool stopped;
 
+    [HideInInspector] public GameObject box;
+    [HideInInspector] public Transform boxPoint;
+
+    public int itemPrice;
+    
     private Transform _currentPoint;
     private float _speed;
     private int _index;
 
     private void Start()
     {
-        _speed = 3;
+        _speed = 5;
         _index = 0;
         _currentPoint = points[_index];
         stopped = false;
@@ -38,7 +43,10 @@ public class ItemMovement : MonoBehaviour
 
         if (_index >= points.Length)
         {
+            var mt = GameObject.Find("MoneysText");
+            mt.GetComponent<MoneyScript>().MoneyCount += itemPrice;
             Destroy(gameObject);
+            Instantiate(box, boxPoint.position, Quaternion.identity);
         }
         else
         {

@@ -47,6 +47,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   points: []
   stopped: 0
+  box: {fileID: 0}
+  boxPoint: {fileID: 0}
+  itemPrice: 240
 --- !u!1 &7146135888140215377
 GameObject:
   m_ObjectHideFlags: 0

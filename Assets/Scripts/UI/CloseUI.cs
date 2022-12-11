@@ -9,4 +9,10 @@ public class CloseUI : MonoBehaviour
         var workbenchMenu = GameObject.Find("WorkbenchMenu");
         workbenchMenu.gameObject.SetActive(false);
     }
+
+    public static void CloseUpakovka()
+    {
+        var upakovkaMenu = GameObject.Find("Upakovka");
+        upakovkaMenu.gameObject.SetActive(false);
+    }
 }
