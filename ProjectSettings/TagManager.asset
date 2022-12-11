@@ -5,6 +5,7 @@ TagManager:
   serializedVersion: 2
   tags:
   - Stop
+  - CurrentItem
   layers:
   - Default
   - TransparentFX

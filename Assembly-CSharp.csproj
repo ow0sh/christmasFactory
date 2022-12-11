@@ -42,13 +42,19 @@
   </PropertyGroup>
   <ItemGroup>
      <Compile Include="Assets/Scripts/Workbench.cs" />
+     <Compile Include="Assets/Scripts/CheckObject.cs" />
+     <Compile Include="Assets/Scripts/Test.cs" />
+     <Compile Include="Assets/Scripts/ChooseBoxColor.cs" />
      <Compile Include="Assets/Scripts/UI/CloseUI.cs" />
+     <Compile Include="Assets/Scripts/OrdersScript.cs" />
+     <Compile Include="Assets/Scripts/MoneyScript.cs" />
      <Compile Include="Assets/TutorialInfo/Scripts/Readme.cs" />
      <Compile Include="Assets/Scripts/UI/WorkbenchMenu.cs" />
+     <Compile Include="Assets/Scripts/BuyIdea.cs" />
      <Compile Include="Assets/Scripts/UI/Create.cs" />
+     <Compile Include="Assets/Scripts/TestScript.cs" />
      <Compile Include="Assets/Scripts/ItemMovement.cs" />
      <Compile Include="Assets/Scripts/Upakovka.cs" />
-     <Compile Include="Assets/Scripts/Test.cs" />
      <Folder Include="Assets" />
      <Folder Include="Assets/Scenes" />
      <None Include="Assets/TextMesh Pro/Shaders/TMPro.cginc" />
